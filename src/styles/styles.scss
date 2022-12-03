@@ -1,0 +1,22 @@
+@import './base/variables';
+
+@import './base/globales';
+
+// Coponents
+@import './components/dashboardIndex';
+
+$theme-colors: (
+  'primary': #0C3D4A,
+  'secondary': #0f6a84,
+  'success': #1cb16c,
+  'info': #0dcaf0,
+  'warning': #ffe607,
+  'danger': #b32a38,
+  'light': #f8f9fa,
+  'dark': #343a40,
+  'green': #09292E,
+  'gray': #908c8c,
+  'gold': #dda41d,
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap';

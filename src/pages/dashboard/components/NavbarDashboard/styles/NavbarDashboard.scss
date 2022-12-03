@@ -1,0 +1,34 @@
+.navbar{
+height: 60px;
+/* background: rgba(255,255,255,0.3); */
+}
+
+i.inav {
+  font-size: 1.5rem;
+  color:#0C3D4A;
+  &:hover,
+  &:focus {
+    color: #056a86;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #0C3D4A;
+
+}
+
+h1 {
+  a {
+    color:#0C3D4A;
+    text-decoration: none;
+    font-family: Oswald,sans-serif;
+    font-weight: bold;
+
+    &:hover,
+      &:focus {
+        color: #056a86;
+        text-decoration:dashed;
+  }
+}
+
+}
