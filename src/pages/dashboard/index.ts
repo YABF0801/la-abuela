@@ -16,5 +16,4 @@ export * from './Statistics';
 export * from './components/NavbarDashboard';
 export * from './components/ButtonAdd'
 export * from './components';
-export * from '../config'
 export * from './index';

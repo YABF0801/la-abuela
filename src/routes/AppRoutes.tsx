@@ -1,5 +1,5 @@
 import { DashboardScreen, HomeScreen, Submision, Circulos ,DashboardIndex, GeneralList, Statistics } from '@/pages';
-import { Config } from '@/pages';
+import { Config, Users, Organismos } from '@/pages';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -36,12 +36,16 @@ const router = createBrowserRouter([
   {
     path: 'configuracion',
     element: <Config/>,
-    /* children: [
+     children: [
       {
-        index: true,
-        element: <DashboardIndex />,
+        path: 'usuarios',
+        element: <Users />,
       },
-    ], */
+      {
+        path: 'organismos',
+        element: <Organismos />,
+      },
+    ], 
   },
 ]);
 

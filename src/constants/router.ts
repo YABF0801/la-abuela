@@ -6,6 +6,8 @@ export const router = {
   ESTADISTICAS: '/dashboard/estadisticas',
   MATRICULA: '/dashboard/matricula',
   CONFIG: '/configuracion',
+  ORGANISMOS: '/configuracion/organismos',
+  USUARIOS: '/configuracion/usuarios',
   CIRCULOS: '/dashboard/circulos',
   LISTADO: '/dashboard/listado',
 };

@@ -36,13 +36,13 @@ const NavbarConfig: React.FC<NavbarConfigInterface> = () => {
       <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul className="navbar-nav align-center gap-5">
           <li className="nav-item ">
-            <NavLink className="nav-link link text-dark" to="/">
+            <NavLink className="nav-link link text-dark" to={router.ORGANISMOS}>
             Organismos
             </NavLink>
           </li>
           
           <li className="nav-item">
-            <NavLink className="nav-link link text-dark " to="/">
+            <NavLink className="nav-link link text-dark " to={router.USUARIOS}>
               Usuarios
             </NavLink>
           </li>
