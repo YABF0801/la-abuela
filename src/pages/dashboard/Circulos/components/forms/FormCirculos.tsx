@@ -10,26 +10,27 @@ type FormCirculosProps = {
 const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
   return (
      
-          <div className="container ">
-            <div className="card-header "> 
+    <div className="container ">
+       <div className="card-header "> 
               <h3 className="text-center">Nuevo Circulo</h3>
             </div>
+            <div className="card-body align-items-center">
 
-             <div className="card-body d-flex gap-3">
-              <label className="form-label ">
-                No.
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="no"
-                  id="no"
-                  placeholder="#"
-                  value={values.no}
-                />
-                <ErrorMessage name="no" component="p" className="text-danger" />
-                </label>
+ <div className="container ">
+   <div className="col-12 col-md-6 ">
+    <label className="form-label col-sm-2 ">
+      Numero:
+      <Field
+        className="form-control"
+        type="text"
+        name="no"
+        id="no"
+        value={values.no}
+      />
+      <ErrorMessage name="no" component="p" className="text-danger" />
+    </label>
 
-              <label className="form-label">
+           <label className="form-label col-sm-10">
                 Nombre del circulo
                 <Field
                   className="form-control"
@@ -41,12 +42,12 @@ const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
                 />
                 <ErrorMessage name="name" component="p" className="text-danger" />
               </label>
+  </div>
+  </div>    
 
-              
-            </div>
-
-            <div className="col-sm-4 d-flex flex-column flex-md-row gap-3">
-            <label className="form-label col-sm-4 ">
+            <div className="container ">
+              <div className="col-12 col-md-6">
+                <label className="form-label col-sm-2 ">
                 Capacidad 2do
                 <Field
                   className="form-control"
@@ -59,7 +60,7 @@ const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
                 <ErrorMessage name="normed_capacity2" component="p" className="text-danger" />
               </label>
 
-              <label className="form-label col-sm-4 ">
+              <label className="form-label col-sm-2 ">
                 Capacidad 3ro
                 <Field
                   className="form-control"
@@ -72,7 +73,7 @@ const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
                 <ErrorMessage name="normed_capacity3" component="p" className="text-danger" />
               </label>
 
-              <label className="form-label col-sm-4 ">
+              <label className="form-label col-sm-2 ">
                 Capacidad 4to
                 <Field
                   className="form-control"
@@ -85,7 +86,7 @@ const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
                 <ErrorMessage name="normed_capacity4" component="p" className="text-danger" />
               </label>
 
-              <label className="form-label col-sm-4 ">
+              <label className="form-label col-sm-2 ">
                 Capacidad 5to
                 <Field
                   className="form-control"
@@ -98,7 +99,7 @@ const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
                 <ErrorMessage name="normed_capacity5" component="p" className="text-danger" />
               </label>
 
-              <label className="form-label col-sm-4 ">
+              <label className="form-label col-sm-2 ">
                 Capacidad 6to
                 <Field
                   className="form-control"
@@ -114,7 +115,20 @@ const FormCirculos: React.FC<FormCirculosProps> = ({ values }) => {
             </div>
            </div>
 
-    
+           <div className="container ">
+   <div className="col-12 col-md-6">
+    <label className="form-label col-sm-12 ">
+      Ubicacion
+  </label>
+    <textarea className="map">
+   
+</textarea>
+
+  </div>
+  </div>
+
+           </div>
+           </div>
 );
 };
 
