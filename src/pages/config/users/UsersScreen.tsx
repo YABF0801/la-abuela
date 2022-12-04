@@ -37,7 +37,7 @@ const Users: React.FC<UsersInterface> = () => {
   return (
     <section className="main-home-sub">
     <div className="card-header col-12 container"><br/><br/>
-    <div className="card-body col-12 users container justify-content-between">
+    <div className="card-body col-12 organismo container justify-content-between">
 
       <Formik
         initialValues={initialValues}
@@ -58,26 +58,26 @@ const Users: React.FC<UsersInterface> = () => {
       >
         {({ values, handleSubmit, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
-              <section className="container">
-
+          <section className="container">
+      
               <FormNewUser values={values} />
-
-              </section>
-
-            
-            <div className="d-flex d-flex justify-content-center  gap-2 pb-3">
- 
-
-              <button type="button" className="btn btn-group btn-gray justify-content-center" >
-                <i className="ibtn bi bi-x-lg"></i>
-              </button>
-
-              <button type="submit" className="btn btn-group btn-primary justify-content-center">
-                <i className="ibtn bi bi-check2"></i>
-              </button>
-            </div>
-            
-          </form>
+      
+          </section>
+      
+                  
+                  <div className="d-flex d-flex justify-content-center  gap-2 pb-3">
+       
+      
+                    <button type="button" className="btn btn-group btn-gray justify-content-center" >
+                      <i className="ibtn bi bi-x-lg"></i>
+                    </button>
+      
+                    <button type="submit" className="btn btn-group btn-primary justify-content-center">
+                      <i className="ibtn bi bi-check2"></i>
+                    </button>
+                  </div>
+                  
+                </form>
         )}
       </Formik>
       

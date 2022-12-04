@@ -110,18 +110,19 @@ const FormNewUser: React.FC<FormUsersProps> = ({ values }) => {
 
                     <div className="col-sm-2">
                     <div className="form-outline">
-                      <label className="form-label" htmlFor="position">
-                        Cargo2
-                      </label>
-                      <Field
-                        type="text"
-                        className="form-control"
-                        name="position"
-                        id="position"
-                        value={values.position}
-                      />
+                    <label className="form-label">
+                      Tipo de usuario:
+                      <Field as="select" className="form-select" name="role">
+                        <option value="" selected>
+                          ---Seleccione---
+                        </option>
+                        <option value="admin">Administrador</option>
+                        <option value="user">Invitado</option>
+                        </Field>
+                      <ErrorMessage name="role" component="p" className="text-danger" />
+                    </label>
                     </div>
-                    <ErrorMessage name="position" component="p" className="text-danger" />
+                    <ErrorMessage name="role" component="p" className="text-danger" />
                     </div>
                     </div>
                     </div>

@@ -4,6 +4,6 @@ export interface IUsers {
 	fullNameUser: string;
 	position: string;
 	password: string;
-	
+	role: string;
 	
 }
