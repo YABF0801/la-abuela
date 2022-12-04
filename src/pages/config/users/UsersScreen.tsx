@@ -28,6 +28,7 @@ const initialValues: IUsers = {
 	fullNameUser: '',
 	position: '',
 	password: '',
+  role: '',
     }
 
 const Users: React.FC<UsersInterface> = () => {
