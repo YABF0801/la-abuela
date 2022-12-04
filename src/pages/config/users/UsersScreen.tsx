@@ -24,14 +24,10 @@ const REQUIRED = 'Este campo es requerido';
     })
 
 const initialValues: IUsers = {
-  no: 0,
-	name: '',
-	capacidad_total: 0,
-  normed_capacity2: 0,
-	normed_capacity3: 0,
-	normed_capacity4: 0,
-	normed_capacity5: 0,
-	normed_capacity6: 0,
+	nick_name: '',
+	fullNameUser: '',
+	position: '',
+	password: '',
     }
 
 const Users: React.FC<UsersInterface> = () => {
@@ -62,14 +58,11 @@ const Users: React.FC<UsersInterface> = () => {
       >
         {({ values, handleSubmit, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
-    <section className="container">
+              <section className="container">
 
-        <div className="card-body">
+              <FormNewUser values={values} />
 
-        <FormNewUser values={values} />
-
-      </div>
-    </section>
+              </section>
 
             
             <div className="d-flex d-flex justify-content-center  gap-2 pb-3">

@@ -10,109 +10,131 @@ type FormUsersProps = {
 const FormNewUser: React.FC<FormUsersProps> = ({ values }) => {
   return (
      
-          <div className="container ">
-            <div className="card-header "> 
-              <h3 className="text-center">Nuevo Usuario</h3>
+    <section className="container ">
+      
+      <div className="row d-flex justify-content-center align-items-center ">
+        <div className="col">
+          <div className="card-body user text-left gap-3">
+            <div className="mb-md-5 mt-md-4">
+              <div className="card-body text-black">
+                <h3 className="text-dark d-flex justify-content-center align-items-center">Nuevo Usuario</h3>
+
+                <div className="container align-items-center gap-3 ">
+                <div className="row justify-content-center">
+                  
+                  <div className="col-sm-2">
+                  <div className="form-outline">
+                      <label className="form-label" htmlFor="nick_name">
+                        Usuario
+                      </label>
+                      <Field
+                        className="form-control"
+                        type="text"
+                        name="nick_name"
+                        id="nick_name"
+                        value={values.nick_name}
+                      />
+                    </div>
+                    <ErrorMessage name="nick_name" component="p" className="text-danger" />
+                    </div>
+
+                  <div className="col-sm-3">
+                    <div className="form-outline">
+                      <label className="form-label" htmlFor="fullNameUser">
+                        Nombre
+                      </label>
+                      <Field
+                        type="text"
+                        className="form-control"
+                        name="fullNameUser"
+                        id="fullNameUser"
+                        value={values.fullNameUser}
+                      />
+                    </div>
+                    <ErrorMessage name="fullNameUser" component="p" className="text-danger" />
+                    </div>
+
+                    <div className="col-sm-3">
+                    <div className="form-outline">
+                      <label className="form-label" htmlFor="position">
+                        Cargo
+                      </label>
+                      <Field
+                        type="text"
+                        className="form-control"
+                        name="position"
+                        id="position"
+                        value={values.position}
+                      />
+                    </div>
+                    <ErrorMessage name="position" component="p" className="text-danger" />
+                    </div>
+                    </div>
+                    </div>
+
+{/* segunga linea */}
+
+              <div className="container align-items-center gap-3 ">
+                <div className="row justify-content-center">
+                    <div className="col-sm-3">
+                  <div className="form-outline">
+                      <label className="form-label" htmlFor="password">
+                        Contraseña
+                      </label>
+                      <Field
+                        className="form-control"
+                        type="text"
+                        name="password"
+                        id="password"
+                        value={values.password}
+                      />
+                    </div>
+                    <ErrorMessage name="password" component="p" className="text-danger" />
+                    </div>
+
+                  <div className="col-sm-3">
+                    <div className="form-outline">
+                      <label className="form-label" htmlFor="password">
+                      Repetir Contraseña
+                      </label>
+                      <Field
+                        type="text"
+                        className="form-control"
+                        name="password"
+                        id="password"
+                        value={values.password}
+                      />
+                    </div>
+                    <ErrorMessage name="password" component="p" className="text-danger" />
+                    </div>
+
+                    <div className="col-sm-2">
+                    <div className="form-outline">
+                      <label className="form-label" htmlFor="position">
+                        Cargo2
+                      </label>
+                      <Field
+                        type="text"
+                        className="form-control"
+                        name="position"
+                        id="position"
+                        value={values.position}
+                      />
+                    </div>
+                    <ErrorMessage name="position" component="p" className="text-danger" />
+                    </div>
+                    </div>
+                    </div>
+
+                 </div>
+
+               </div>
+             </div>
             </div>
-
-             <div className="card-body d-flex gap-3">
-              <label className="form-label ">
-                No.
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="no"
-                  id="no"
-                  placeholder="#"
-                  value={values.no}
-                />
-                <ErrorMessage name="no" component="p" className="text-danger" />
-                </label>
-
-              <label className="form-label">
-                Nombre del circulo
-                <Field
-                  className="form-control"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder=" Nombre del circulo"
-                  value={values.name}
-                />
-                <ErrorMessage name="name" component="p" className="text-danger" />
-              </label>
-
+          </div>
               
-            </div>
 
-            <div className="col-sm-4 d-flex flex-column flex-md-row gap-3">
-            <label className="form-label col-sm-4 ">
-                Capacidad 2do
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="normed_capacity2"
-                  id="normed_capacity2"
-                  placeholder=" #"
-                  value={values.normed_capacity2}
-                />
-                <ErrorMessage name="normed_capacity2" component="p" className="text-danger" />
-              </label>
-
-              <label className="form-label col-sm-4 ">
-                Capacidad 3ro
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="normed_capacity3"
-                  id="normed_capacity3"
-                  placeholder=" #"
-                  value={values.normed_capacity3}
-                />
-                <ErrorMessage name="normed_capacity3" component="p" className="text-danger" />
-              </label>
-
-              <label className="form-label col-sm-4 ">
-                Capacidad 4to
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="normed_capacity4"
-                  id="normed_capacity4"
-                  placeholder=" #"
-                  value={values.normed_capacity4}
-                />
-                <ErrorMessage name="normed_capacity4" component="p" className="text-danger" />
-              </label>
-
-              <label className="form-label col-sm-4 ">
-                Capacidad 5to
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="normed_capacity5"
-                  id="normed_capacity5"
-                  placeholder=" #"
-                  value={values.normed_capacity5}
-                />
-                <ErrorMessage name="normed_capacity5" component="p" className="text-danger" />
-              </label>
-
-              <label className="form-label col-sm-4 ">
-                Capacidad 6to
-                <Field
-                  className="form-control"
-                  type="number"
-                  name="normed_capacity6"
-                  id="normed_capacity6"
-                  placeholder=" #"
-                  value={values.normed_capacity6}
-                />
-                <ErrorMessage name="normed_capacity6" component="p" className="text-danger" />
-              </label>
-
-            </div>
-           </div>
+</section>   
 
     
 );

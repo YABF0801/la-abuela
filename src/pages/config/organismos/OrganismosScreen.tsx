@@ -54,11 +54,8 @@ const Organismos: React.FC<OrganismosInterface> = () => {
           <form onSubmit={handleSubmit}>
     <section className="container">
 
-        <div className="card-body">
-
         <FormOrganismos values={values} />
 
-      </div>
     </section>
 
             

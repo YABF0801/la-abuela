@@ -28,12 +28,12 @@ const FormOrganismos: React.FC<FormOrganismosProps> = ({ values }) => {
                       <Field
                         className="form-control"
                         type="text"
-                        name="organismos.name"
+                        name="name"
                         id="name"
                         value={values.name}
                       />
                     </div>
-                    <ErrorMessage name="organismos.name" component="p" className="text-danger" />
+                    <ErrorMessage name="name" component="p" className="text-danger" />
                     </div>
 
                   <div className="col-sm-6">
@@ -44,12 +44,12 @@ const FormOrganismos: React.FC<FormOrganismosProps> = ({ values }) => {
                       <Field
                         type="text"
                         className="form-control"
-                        name="organismos.description"
+                        name="description"
                         id="description"
                         value={values.description}
                       />
                     </div>
-                    <ErrorMessage name="organismos.description" component="p" className="text-danger" />
+                    <ErrorMessage name="description" component="p" className="text-danger" />
                     </div>
 
                     <div className="col-sm-2 p-lg-5">
@@ -58,7 +58,7 @@ const FormOrganismos: React.FC<FormOrganismosProps> = ({ values }) => {
                         className="form-check-input switch-lg"
                         type="checkbox"
                         role="switch"
-                        name="organismos.priorizado"
+                        name="priorizado"
                         id="priorizado"
                         checked={values.priorizado}
                       />
@@ -76,7 +76,7 @@ const FormOrganismos: React.FC<FormOrganismosProps> = ({ values }) => {
       </div>
     </div>
 
-           </section>   
+</section>   
 );
 };
 
