@@ -7,7 +7,733 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
 <section>
   <br/><p>COSAS EN HTML</p>
 
-{/*     <div className="main-home text-bg-white"></div> */}
+{/*   NUEVO USUARIO FORM */}
+
+<div className="container justify-content-center align-items-center">
+
+  <div className="card ">
+	<div className="card-header"><h3>Nuevo Usuario</h3></div>
+	<div className="card-body ">
+
+		<form>
+
+    
+    <div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-3 mb-3">
+
+	<label>Usuario</label>
+	<input type="text" className="form-control" name="nick_name" id="nick_name" placeholder="Usuario" required/>
+		</div>
+
+	<div className="col-md-5 mb-3">
+
+	<label >Nombre y apellidos</label>
+	<input type="text" className="form-control" name="fullNameUser" id="fullNameUser" placeholder="Nombre y Apellidos" required/>
+		</div>
+    </div>
+</div>
+
+
+
+<div className="form-group">
+	<div className="col-md-8 mb-3">
+	<label >Cargo</label>
+	<input type="text" className="form-control" name="cargo" id="cargo" placeholder="Cargo que ocupa en la empresa" required/>
+</div>
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-4 mb-3">
+
+	<label >Contraseña</label>
+	<input type="password" className="form-control" name="password" id="password" placeholder="Contraseña" required/>
+		</div>
+
+	<div className="col-md-4 mb-3">
+
+	<label >Repetir contraseña</label>
+	<input type="password" className="form-control" name="password2" id="password2" placeholder="Repetir contraseña" required/>
+		</div>
+
+</div>
+
+</div>
+
+<div className="form-group">
+	<div className="col-md-6 mb-3 ">
+		<div className="custom-control custom-radio custom-control-inline">
+			<input className="custom-control-input" type="radio" name="type" id="admin" value="1"/>
+			<label className="custom-control-label" >Administrador</label>
+		</div>
+		<div className="custom-control custom-radio custom-control-inline">
+			<input className="custom-control-input" type="radio" name="type" id="user" value="2" checked/>
+			<label className="custom-control-label">Invitado</label>
+		</div>
+	</div>
+</div>
+
+		</form>
+
+
+	</div>
+</div>
+</div>
+
+<br></br>
+{/* NUEVO ORGANISMO FORM */}
+<div className="container justify-content-center align-items-center"> 
+<div className="card">
+	<div className="card-header"><h3>Nuevo Organismo</h3></div>
+	<div className="card-body">
+
+		<form>
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-3 mb-3">
+    
+
+	<label>Nombre</label>
+	<input type="text" className="form-control" name="name" id="name" placeholder="Nombre" required/>
+		</div>
+
+	<div className="col-md-7 mb-3">
+
+	<label >Descripcion</label>
+	<textarea className="form-control" rows={1} name="description" id="description" placeholder="Escriba una breve descripcion"></textarea>
+		</div>
+
+	<div className="col-md-2 mb-3">
+
+  <input className="form-check form-switch" type="checkbox" role="switch" name="priorizado" id="priorizado"/>
+			<label className="custom-control-label">Priorizado</label>
+		</div>
+
+</div>
+
+</div>
+
+		</form>
+
+
+	</div>
+</div>
+</div>
+
+<br></br>
+{/* NUEVO CIRCULO */}
+
+<div className="container justify-content-center align-items-center">
+<div className="card">
+	<div className="card-header"><h3>Nuevo Circulo</h3></div>
+	<div className="card-body">
+
+		<form>
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-2 mb-3">
+
+	<label>No.</label>
+	<input type="number" className="form-control" name="no" id="no"/>
+		</div>
+
+	<div className="col-md-8 mb-3">
+
+	<label>Nombre</label>
+	<input type="text" className="form-control" name="name" id="name" placeholder="Nombre del círculo"/>
+		</div>
+
+</div>
+
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+  <div className="col-md-8 mb-3">
+  <label >Ubicación</label>
+	<textarea className="form-control" rows={12} name="mapbox" id="mapbox" placeholder="aqui va un mapbox"></textarea>
+  </div>
+
+	<div className="col-md-2 mb-3">
+
+	<label>Capacidad 2</label>
+	<input type="number" className="form-control" name="normedCapacity2" id="normedCapacity2"/>
+
+	<label >Capacidad 3</label>
+	<input type="number" className="form-control" name="normedCapacity3" id="normedCapacity3"/>
+	
+	<label>Capacidad 4</label>
+	<input type="number" className="form-control" name="normedCapacity4" id="normedCapacity4"/>
+
+	<label >Capacidad 5</label>
+	<input type="number" className="form-control" name="normedCapacity5" id="normedCapacity5"/>
+
+
+	<label>Capacidad 6</label>
+	<input type="number" className="form-control" name="normedCapacity6" id="normedCapacity6"/>
+
+</div>
+
+</div>
+</div>
+
+
+
+		</form>
+
+
+	</div>
+</div>
+</div>
+
+
+<br></br>
+{/* NIÑO FORM */}
+
+<div className="container justify-content-center align-items-center">
+<div className="card">
+	<div className="card-header"><h3>Datos del nino</h3></div>
+	<div className="card-body">
+
+		<form>
+
+<div className="form-group ">
+<div className="row align-items-center">
+	<div className="col-md-3 mb-3">
+
+	<input type="text" className="form-control" name="os_om" id="os_om" placeholder="BOTON OS/OM"/>
+		</div>
+
+	<div className="col-md-4 mb-3">
+
+	<div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" name="new" id="new" value="1" />
+			<label className="form-check-label">Nueva Solicitud</label>
+		</div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" name="traslado" id="traslado" value="2"/>
+			<label className="form-check-label">Traslado</label>
+		</div>
+	</div>
+		</div>
+
+	<div className="col-md-3 mb-3">
+
+	<div>
+		<div className="custom-control custom-switch custom-control-inline">
+			<input className="custom-control-input" type="checkbox" name="socialCase" id="socialCase" value="1"/>
+			<label className="custom-control-label">Caso Social</label>
+		</div>
+	</div>
+  </div>
+
+  <div className="col-md-2 mb-3">
+  <label>No. Entrada</label>
+	<input type="number" className="form-control" name="entry" id="entry"/>
+		</div>
+
+</div>
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-7 mb-3">
+
+	<label>Nombre y Apellidos</label>
+	<input type="text" className="form-control" name="fullNameChild" id="fullNameChild"/>
+		</div>
+
+	<div className="col-md-3 mb-3">
+
+	<label>CI</label>
+	<input type="text" className="form-control" name="ci" id="ci"/>
+		</div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Año de vida</label>
+	<select className="select" name="year_of_life" id="year_of_life">
+		<option value="1">2</option>
+		<option value="2">3</option>
+		<option value="3">4</option>
+		<option value="4">5</option>
+		<option value="5">6</option>
+	</select>
+		</div>
+
+</div>
+
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-8 mb-3">
+
+	<label>Dirección</label>
+	<input type="text" className="form-control" name="childAdress" id="childAdress"/>
+		</div>
+
+	<div className="col-md-4 mb-3">
+
+	<label>Localidad</label>
+	<input type="text" className="form-control" name="locality" id="locality"/>
+		</div>
+
+</div>
+
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+  <div className="col-md-4 mb-3">
+
+	<label >Consejo Popular</label>
+	<select className="custom-select" name="cPopular" id="cPopular">
+		<option value="1">Micro 70</option>
+		<option value="2">Abel Santamaría</option>
+		<option value="3">Centro Histórico Nueva Gerona</option>
+		<option value="4">Pueblo Nuevo</option>
+		<option value="5">26 de Julio</option>
+		<option value="6">Sierra Caballos</option>
+		<option value="7">Delio Chacón</option>
+		<option value="8">Patria</option>
+		<option value="9">Centro Histórico Santa Fé</option>
+		<option value="10">Los Paneles (Santa Fe)</option>
+		<option value="11">Julio Antonio Mella (Santa Fe)</option>
+		<option value="12">Consejo Popular La Demajagua</option>
+		<option value="13">La Reforma</option>
+		<option value="14">Argelia-Victoria</option>
+	</select>
+
+	<label >Municipio</label>
+	<select className="custom-select" name="Municipality" id="Municipality">
+		<option value="1">Isla de la Juventud</option>
+	</select>
+
+	<label >Provincia</label>
+	<select className="custom-select" name="Province" id="Province">
+		<option value="1">Isla de la Juventud</option>
+	</select>
+
+</div>
+
+<div className="col-md-8 mb-3">
+
+<label >Ubicación</label>
+<textarea className="form-control" rows={12} name="latlon" id="latlon" placeholder="aqui va el mapbox">  </textarea>
+</div>
+
+</div>
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-9 mb-3">
+
+	<p >Seleccione el circulo en el que sera matriculado</p>
+		</div>
+
+	<div className="col-md-3 mb-3">
+
+	<select className="custom-select" name="circulo" id="circulo">
+		<option value="1">seleccione</option>
+	</select>
+		</div>
+
+</div>
+
+</div>
+
+		</form>
+
+
+	</div>
+</div>
+</div>
+
+<br></br>
+{/* MADRE FORM */}
+
+<div className="container justify-content-center align-items-center">
+<div className="card">
+	<div className="card-header"><h3>Datos de la madre</h3></div>
+	<div className="card-body">
+
+		<form>
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-7 mb-3">
+
+	<label>Nombre y Apellidos</label>
+	<input type="text" className="form-control" name="fullNameChild" id="fullNameChild"/>
+		</div>
+
+	<div className="col-md-3 mb-3">
+
+	<label>Prentesco</label>
+	<select className="custom-select">
+		<option value="1">Madre</option>
+    <option value="1">Padre</option>
+    <option value="1">Tutor</option>
+	</select>
+		</div>
+
+    <div className="col-md-2 mb-3">
+    <div>
+		<div className="custom-control custom-switch custom-control-inline">
+			<input className="custom-control-input" type="checkbox" name="unicParent" id="unicParent" value="1"/>
+			<label className="custom-control-label">Monoparental</label>
+		</div>
+	</div>
+  </div>
+  </div>
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+
+<div className="col-md-2 mb-3">
+    <div>
+		<div className="custom-control custom-switch custom-control-inline">
+			<input className="custom-control-input" type="checkbox" value="1"/>
+			<label className="custom-control-label">Convive</label>
+		</div>
+	</div>
+  </div>
+
+	<div className="col-md-7 mb-3">
+	<label>Dirección</label>
+	<input type="text" className="form-control" name="adress" id="adress"/>
+		</div>
+
+	<div className="col-md-3 mb-3">
+	<label>Telefono</label>
+	<input type="text" className="form-control" name="phoneNumber" id="phoneNumber"/>
+	</div>
+		</div>
+
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+  <div className="col-md-4 mb-3">
+
+	<div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" value="1" />
+			<label className="form-check-label">Trabajador</label>
+		</div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" value="2"/>
+			<label className="form-check-label">Jubilado</label>
+		</div>
+    		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" value="3"/>
+			<label className="form-check-label">Asistenciado</label>
+		</div>
+	</div>
+
+</div>
+
+<div className="col-md-8 mb-3">
+
+<label >Nombre del centro de trabajo</label>
+<input type="text" className="form-control" name="work" id="work"/>
+	</div>
+</div>
+
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-8 mb-3">
+
+	<label>Dirección del centro de trabajo</label>
+	<input type="text" className="form-control" />
+		</div>
+
+    <div className="col-md-3 mb-3">
+
+<label>Organismo</label>
+<select className="custom-select" name="organismo" id="organismo">
+  <option value="1">Seleccione</option>
+</select>
+  </div>
+
+  <div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-8 mb-3">
+
+	<label >Cargo</label>
+	<input type="text" className="form-control" name="cargo" id="cargo"/>
+		</div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Horario</label>
+	<input type="text" className="form-control" name="horario" id="horario"/>
+		</div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Salario</label>
+	<input type="number" className="form-control" name="salary" id="salary"/>
+		</div>
+
+</div>
+
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+
+	<div className="col-md-7 mb-3">
+  <div className="form-check form-check-inline">
+			<input className="form-check-input" type="checkbox" value="1" />
+			<label className="form-check-label">Tiene otros niños en circulo infantil</label>
+		</div>
+  </div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Cantidad</label>
+	<input type="text" className="form-control"/>
+		</div>
+
+  <div className="col-md-3 mb-3">
+<select className="custom-select" >
+  <option value="1">Seleccione</option>
+</select>
+  </div>
+
+</div>
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+  <div className="col-md-6 mb-3">
+
+	<div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="checkbox" value="1" />
+			<label className="form-check-label">Embarazada</label>
+		</div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="checkbox" value="2"/>
+			<label className="form-check-label">Estudiante</label>
+		</div>
+    		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="checkbox" value="3"/>
+			<label className="form-check-label">Hipoacusica</label>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+
+<div className="col-md-12 mb-3">
+
+<label >Motivo de solicitud</label>
+<textarea className="form-control" rows={2}>  </textarea>
+</div>
+
+</div>
+
+</div>
+
+
+
+		</form>
+
+
+	</div>
+</div>
+</div>
+
+
+<br></br>
+{/* PADRE FORM */}
+
+<div className="container justify-content-center align-items-center">
+<div className="card">
+	<div className="card-header"><h3>Datos del padre</h3></div>
+	<div className="card-body">
+
+		<form>
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-7 mb-3">
+
+	<label>Nombre y Apellidos</label>
+	<input type="text" className="form-control" name="fullNameChild" id="fullNameChild"/>
+		</div>
+
+	<div className="col-md-3 mb-3">
+
+	<label>Prentesco</label>
+	<select className="custom-select" >
+    <option value="1">Padre</option>
+    <option value="1">Madre</option>
+    <option value="1">Tutor</option>
+	</select>
+		</div>
+
+  </div>
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+
+<div className="col-md-2 mb-3">
+    <div>
+		<div className="custom-control custom-switch custom-control-inline">
+			<input className="custom-control-input" type="checkbox" value="1"/>
+			<label className="custom-control-label">Convive</label>
+		</div>
+	</div>
+  </div>
+
+	<div className="col-md-7 mb-3">
+	<label>Dirección</label>
+	<input type="text" className="form-control" name="adress" id="adress"/>
+		</div>
+
+	<div className="col-md-3 mb-3">
+	<label>Telefono</label>
+	<input type="text" className="form-control" name="phoneNumber" id="phoneNumber"/>
+	</div>
+		</div>
+
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+  <div className="col-md-4 mb-3">
+
+	<div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" value="1" />
+			<label className="form-check-label">Trabajador</label>
+		</div>
+		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" value="2"/>
+			<label className="form-check-label">Jubilado</label>
+		</div>
+    		<div className="form-check form-check-inline">
+			<input className="form-check-input" type="radio" value="3"/>
+			<label className="form-check-label">Asistenciado</label>
+		</div>
+	</div>
+
+</div>
+
+<div className="col-md-8 mb-3">
+
+<label >Nombre del centro de trabajo</label>
+<input type="text" className="form-control" name="work" id="work"/>
+	</div>
+</div>
+
+</div>
+
+
+<div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-8 mb-3">
+
+	<label>Dirección del centro de trabajo</label>
+	<input type="text" className="form-control" />
+		</div>
+
+    <div className="col-md-3 mb-3">
+
+<label>Organismo</label>
+<select className="custom-select" name="organismo" id="organismo">
+  <option value="1">Seleccione</option>
+</select>
+  </div>
+
+  <div className="form-group">
+<div className="row align-items-center">
+	<div className="col-md-8 mb-3">
+
+	<label >Cargo</label>
+	<input type="text" className="form-control" name="cargo" id="cargo"/>
+		</div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Horario</label>
+	<input type="text" className="form-control" name="horario" id="horario"/>
+		</div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Salario</label>
+	<input type="number" className="form-control" name="salary" id="salary"/>
+		</div>
+
+</div>
+
+</div>
+
+<div className="form-group">
+<div className="row align-items-center">
+
+	<div className="col-md-7 mb-3">
+  <div className="form-check form-check-inline">
+			<input className="form-check-input" type="checkbox" value="1" />
+			<label className="form-check-label">Tiene otros niños en circulo infantil</label>
+		</div>
+  </div>
+
+	<div className="col-md-2 mb-3">
+
+	<label >Cantidad</label>
+	<input type="text" className="form-control"/>
+		</div>
+
+  <div className="col-md-3 mb-3">
+<select className="custom-select" >
+  <option value="1">Seleccione</option>
+</select>
+  </div>
+
+</div>
+</div>
+
+
+<div className="col-md-12 mb-3">
+
+<label >Motivo de solicitud</label>
+<textarea className="form-control" rows={2}>  </textarea>
+</div>
+
+</div>
+
+</div>
+
+
+
+		</form>
+
+
+	</div>
+</div>
+</div>
 
 {/* ---------LISTADO DE USUARIOS---------  */}<p></p>
     <div>
