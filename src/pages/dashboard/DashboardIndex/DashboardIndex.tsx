@@ -20,6 +20,7 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
     
     <div className="form-group">
 <div className="row align-items-center">
+
 	<div className="col-md-3 mb-3">
 
 	<label>Usuario</label>
@@ -62,17 +63,21 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
 </div>
 
 <div className="form-group">
+<div className="row align-items-center">
 	<div className="col-md-6 mb-3 ">
 		<div className="custom-control custom-radio custom-control-inline">
 			<input className="custom-control-input" type="radio" name="type" id="admin" value="1"/>
 			<label className="custom-control-label" >Administrador</label>
 		</div>
+
 		<div className="custom-control custom-radio custom-control-inline">
 			<input className="custom-control-input" type="radio" name="type" id="user" value="2" checked/>
 			<label className="custom-control-label">Invitado</label>
 		</div>
+    </div>
 	</div>
-</div>
+  </div>
+
 
 		</form>
 
@@ -155,7 +160,7 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
 <div className="row align-items-center">
   <div className="col-md-8 mb-3">
   <label >Ubicación</label>
-	<textarea className="form-control" rows={12} name="mapbox" id="mapbox" placeholder="aqui va un mapbox"></textarea>
+	<div id="map" style={{height:400, width:800, backgroundColor: 'gray' }}></div>
   </div>
 
 	<div className="col-md-2 mb-3">
@@ -236,6 +241,7 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
   <label>No. Entrada</label>
 	<input type="number" className="form-control" name="entry" id="entry"/>
 		</div>
+
 
 </div>
 </div>
@@ -328,7 +334,7 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
 <div className="col-md-8 mb-3">
 
 <label >Ubicación</label>
-<textarea className="form-control" rows={12} name="latlon" id="latlon" placeholder="aqui va el mapbox">  </textarea>
+<div id="map" style={{height:400, width:800, backgroundColor: 'gray' }}></div>
 </div>
 
 </div>
@@ -660,10 +666,6 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
 
     <div className="col-md-3 mb-3">
 
-<label>Organismo</label>
-<select className="custom-select" name="organismo" id="organismo">
-  <option value="1">Seleccione</option>
-</select>
   </div>
 
   <div className="form-group">
@@ -690,30 +692,7 @@ const DashboardIndex: React.FC<DashboardIndexInterface> = () => {
 
 </div>
 
-<div className="form-group">
-<div className="row align-items-center">
 
-	<div className="col-md-7 mb-3">
-  <div className="form-check form-check-inline">
-			<input className="form-check-input" type="checkbox" value="1" />
-			<label className="form-check-label">Tiene otros niños en circulo infantil</label>
-		</div>
-  </div>
-
-	<div className="col-md-2 mb-3">
-
-	<label >Cantidad</label>
-	<input type="text" className="form-control"/>
-		</div>
-
-  <div className="col-md-3 mb-3">
-<select className="custom-select" >
-  <option value="1">Seleccione</option>
-</select>
-  </div>
-
-</div>
-</div>
 
 
 <div className="col-md-12 mb-3">
